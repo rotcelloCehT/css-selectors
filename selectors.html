@@ -1,0 +1,63 @@
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>CSS Selectors</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+  <div class="page">
+    <body>
+      <h1>CSS Selectors</h1>
+
+      <!-- URL FRAGMENTS -->
+      <!-- 
+        Extentds the url with the button ID. Since only one per page, the page knows where to go.
+
+        FROM THE SAME PAGE:
+          <a href="#button-2">Fly To Button Two</a>
+
+        FROM A DIFFERENT PAGE:
+          <a href"selectors.html#button-2>Fly To Button Two</a>
+       -->
+      <a href="#button-2">Fly To Button Two</a>
+
+      <!-- ASSIGNING a class name is creating a selector for css with dot notation. <p>, <div>, <span> -->
+      <p class="synopsis">CSS selectors let you <em>select</em> individual HTML elements in an HTML
+        document. This is <strong>super</strong> useful.</p>
+
+      <p>Classes are ridiculously important, since they allow you to select
+        arbitrary boxes in your web pages.</p>
+
+      <p>We’ll also be talking about links in this example, so here’s
+        <a href='https://internetingishard.com'>Interneting Is Hard</a> for us to
+        style.</p>
+
+            <!-- DIV doesn't alter the semantic structure of a page. -->
+      <!-- <div class="button">Button One</div> -->
+          <!-- MUTLIPLE classes for child alteration -->
+          <!-- OVERWRITTEN from left to right. Right most class is last override -->
+      <!-- <div class="button call-to-action">Button Two</div> -->
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium nesciunt sunt modi! Veniam, aspernatur tempore maxime atque asperiores iste recusandae aliquam esse, dolor quo in culpa vel dolorem molestias labore.</p>
+
+
+      <a class='button' href='nowhere.html'>Button One</a>
+      <a id="button-2" class='button call-to-action' href='nowhere.html'>Button Two</a>
+      
+    </body>
+    <div class='sidebar'>
+      <p>If this page had a sidebar...</p>
+      <p>We’d have some problems with pseudo-classes.</p>
+    </div>
+  </div>
+</html>

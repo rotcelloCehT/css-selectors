@@ -1,0 +1,155 @@
+.page {
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+.synopsis {
+    color: #7e8184;
+    font-style: italic;
+}
+
+.synopsis em {
+    font-style: normal;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #5995da;
+    font-weight: bold;
+    padding: 20px;
+    /* text align center allign the elements inside the div which is a block box */
+    text-align: center;
+    border: 2px solid #5d6063;
+    border-radius: 5px;
+
+    width: 200px;
+    /* margin: vertical horizontal */
+    margin: 20px auto;
+}
+
+.button:link, 
+.button:visited {
+    display: block;
+    text-decoration: none;
+
+    color: #FFF;
+    background-color: #5995da;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5d6063;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover {
+    color: #FFF;
+    background-color: #76aeed;
+}
+
+.button:active, 
+.button:visited:active {
+    color: #FFF;
+    background-color: #5995da;
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+    font-style: italic;
+    background-color: #eeb75a;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+    background-color: #f5cf8e;
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+    background-color: #eeb75a;
+}
+
+#button-2 {
+    color: #5d6063;
+}
+
+/* AVOID THIS  */
+
+/* - Try to avoid this 
+.article h2 .subheading em {
+    - Special styles 
+  } 
+*/
+
+/* BECAUSE */
+
+/* <div class='article'>
+  <h2>
+    <span class='.subheading'>This is <em>really</em> special text</span>
+  </h2>
+</div> */
+/* ---------------------------------------------------------------------------------- */
+
+/* PSEUDO CLASSES */
+/* 
+:link – A link the user has never visited.
+:visited – A link the user has visited before.
+:hover – A link with the user’s mouse over it.
+:active – A link that’s being pressed down by a mouse (or finger). 
+*/
+
+a:link {
+    color: blue;
+    text-decoration: none;
+  }
+  a:visited {
+    color: purple;
+  }
+/* CAN STACK TO DEFINE PRECISE BEHAVIOUR but..... BREAKS ACTIVE */
+  a:visited:hover {
+    color: orange;
+  }
+  /* FIX: by adding the bellow */
+  a:visited:active {
+    color: red;
+  }
+
+  a:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+  a:active {
+    color: red;
+  }
+
+
+  /* PSEUDO CLASSES FOR STRUCTURE */
+  
+  /* LAST-OF-TYPE selects the last element of a certain type */
+  .page > p:last-of-type {
+      margin-bottom: 50px;
+  }
+
+  /* OVERRIDEES .synopsis{}  */
+    /* use for seperation of content when designing templates */
+    /* WATCH YOU THOUGH... */
+    /* !@! p:first-of-type selects the first <p> in every container element. */
+
+    /* Can limit scope easily to a div by using .page > p:first-of-type */
+
+  .page > p:first-of-type {
+    color: #7e8184;
+    font-style: italic;
+}
+
+
+/*                               --------------------  ID'S ----------------- */
+
+/* ID's are strict. ONLY ONE ELEMENT CAN HAVE THAT ID. Cannot reuse styles 
+    FROWNED UPON, USE CLASS SELECTORS!!
+
+    ID has higher order than class selectors
+*/
